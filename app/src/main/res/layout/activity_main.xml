@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="internal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/latihan_presistance"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/internal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="tombol"
+        android:tag="internal"
+        android:text="@string/internal_storage" />
+
+    <Button
+        android:id="@+id/external"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="tombol"
+        android:tag="external"
+        android:text="@string/external_storage" />
+</LinearLayout>
